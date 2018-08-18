@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js生成二维码</title>
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery.qrcode.min.js" ></script>
+		<style>
+			ul
+			{
+				list-style-type: none;
+			}
+			li
+			{
+				float: left;
+				margin-left: 20px;
+			}
+			#add
+			{
+				background-color: aqua;
+				color: white;
+				width: 50px;
+				height: 50px;
+				position: fixed;
+				right: 10px;
+				bottom: 10px;
+				font-size: 40px;
+				font-weight: 600;
+				line-height: 44px;
+				text-align: center;
+				border-radius: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<input />
+				<div></div>
+			</li>
+		</ul>
+	</body>
+	<script>
+		$("input").focusout(function() 
+		{
+			var txt= $(this).val();
+			$(this).next().html("");
+			$(this).next().qrcode(txt);
+		})
+	</script>
+</html>
