@@ -1,0 +1,84 @@
+/*Fontawesome Iconfont*/
+
+@import url(http://www.jq22.com/jquery/font-awesome.4.6.0.css);
+
+@font-face 
+{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf);
+}
+
+* {margin: 0; padding: 0;}
+
+li {list-style-type: none;}
+
+
+
+.grid {float: left;width:99%;margin: 0 auto;}
+
+.grid > li { width: 100%; height: 500px; overflow: hidden; float: left; margin: 0 0 0 0; position: relative; }
+
+.grid > li:hover {box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);}
+
+
+
+.grid>li section {position: relative; transition: all 0.25s; width: 100%;}
+
+.sidenav { position: absolute; top: 0; left: 0; bottom: 0; background: linear-gradient(rgba(50,60,60, 1), rgba(50,60,60, 0.7)); width: 50px; transition: all 0.25s; overflow-y: auto;overflow-x: hidden; padding-top: 10px;}
+
+.sidenav li { _overflow: hidden; width: 320px; }
+
+.sidenav a { text-decoration: none; color: #eee;  display: block; line-height: 48px;  }
+
+.sidenav span {display: block;}
+
+.sidenav b { padding-left 10px; display: block; color: white; font-family: Montserrat; font-size: 12px; line-height: 4; opacity: 0; }
+
+.sidenav a i { display: block; float: left; font-size: 16px; line-height: 48px; width: 50px; text-align: center; }
+
+
+
+/*All instances*/
+
+.grid>li:hover .sidenav {width: 330px;}
+
+.grid>li:hover section {margin-left: 330px;}
+
+.grid>li:hover b {opacity: 1;}
+
+
+.sidenav li:nth-child(10n+1) b, .sidenav li:nth-child(1) a {transition-delay: .05s;}
+
+.sidenav li:nth-child(10n+2) b, .sidenav li:nth-child(2) a {transition-delay: .10s;}
+
+.sidenav li:nth-child(10n+3) b, .sidenav li:nth-child(3) a {transition-delay: .15s;}
+
+.sidenav li:nth-child(10n+4) b, .sidenav li:nth-child(4) a {transition-delay: .25s;}
+
+.sidenav li:nth-child(10n+5) b, .sidenav li:nth-child(5) a {transition-delay: .20s;}
+
+.sidenav li:nth-child(10n+6) b, .sidenav li:nth-child(6) a {transition-delay: .25s;}
+
+.sidenav li:nth-child(10n+7) b, .sidenav li:nth-child(6) a {transition-delay: .30s;}
+
+.sidenav li:nth-child(10n+8) b, .sidenav li:nth-child(6) a {transition-delay: .35s;}
+
+.sidenav li:nth-child(10n+9) b, .sidenav li:nth-child(6) a {transition-delay: .40s;}
+
+.sidenav li:nth-child(10n) b, .sidenav li:nth-child(6) a {transition-delay: .45s;}
+
+
+
+/*One*/
+
+.one .w {transform: perspective(250px);}
+
+.one b {transform: perspective(250px) rotateY(90deg); _opacity: 0; transform-origin: left center; _border: 1px solid white;}
+
+.one:hover b {transform: perspective(250px) rotateX(0); transition: all .4s; opacity: 1;}
+
+.one .sidenav {width: 335px;}
+
+.one .sidenav span {float: left; width: 250px;}
